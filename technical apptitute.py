@@ -1,19 +1,15 @@
-# Take a string 'aaabbcdaee' and count the string numbers,print 4a,2b,1c,1d,2e
-x = 'aaabbcdaee'
-count_a=0
-count_b=0
-count_c=0
-count_d=0
-count_e=0
-for i in range(0,len(x)):
-    if x[i]=='a':
-        count_a+=1
-    elif x[i]=='b':
-        count_b+=1
-    elif x[i]=='c':
-        count_c+=1
-    elif x[i]=='d':
-        count_d+=1
-    elif x[i]=='e':
-        count_e+=1
-print(count_a,'a',count_b,'b',count_c,'c',count_d,'d',count_e,'e')
+# print how many times reapeted 10,20,30
+mylist=[10,20,10,20,30]
+count1=0
+count2=0
+count3=0
+for i in range(0,len(mylist)):
+    if mylist[i]==10:
+        count1=count1+1
+    elif mylist[i]==20:
+        count2=count2+1
+    else:
+        count3=count3+1
+print('10 is ',count1,'times')
+print('20 is',count2,'times')
+print('30 is',count3,'times')
